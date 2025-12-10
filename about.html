@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amina Eddaoudi — À propos</title>
+  <meta name="description" content="À propos — Amina Eddaoudi, étudiante en informatique">
+
+  <style>
+    :root{
+      --accent:#c4b5fd;
+      --bg:#000000;
+      --card:#0a0a0a;
+      --muted:#b8b8d4;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;
+      color:#e5e7eb;
+      background:black;
+    }
+    .wrap{max-width:1000px;margin:40px auto;padding:24px}
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:32px;
+    }
+    .logo{display:flex;gap:12px;align-items:center}
+    .avatar{
+      width:56px;height:56px;
+      border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),#a78bfa);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:black;
+    }
+    nav a{
+      margin-left:16px;
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .card{
+      background:var(--card);
+      padding:22px;
+      border-radius:14px;
+    }
+    h1,h2{margin-top:0}
+    .muted{color:var(--muted)}
+    footer{
+      margin-top:40px;
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <div class="avatar">AE</div>
+      <div>
+        <div class="muted" style="font-size:13px">À propos de</div>
+        <h1>Amina Eddaoudi</h1>
+        <div class="muted">Étudiante en informatique</div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="projects.html">Projets</a>
+      <a href="skills.html">Compétences</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <div class="card">
+      <h2>Qui suis-je ?</h2>
+
+      <p class="muted">
+        Je suis une étudiante passionnée par le monde de l’informatique et de la
+        programmation. Dès mes premières années d’études, j’ai développé un
+        intérêt particulier pour les nouvelles technologies et la manière dont
+        elles permettent de résoudre des problèmes concrets.
+      </p>
+
+      <p class="muted">
+        Je m’intéresse plus particulièrement à la <strong>cybersécurité</strong>,
+        un domaine en constante évolution qui joue un rôle essentiel dans la
+        protection des systèmes informatiques et des données. Mon objectif est
+        de combiner la programmation et la cybersécurité afin de développer des
+        solutions fiables et sécurisées.
+      </p>
+
+      <p class="muted">
+        Autonome, rigoureuse et dotée d’une grande capacité d’adaptation, je suis
+        toujours motivée par l’apprentissage et le perfectionnement de mes
+        compétences techniques à travers des projets académiques et personnels.
+      </p>
+
+      <p class="muted">
+        Ce portfolio a été réalisé dans le cadre d’un projet scolaire en utilisant
+        exclusivement <strong>HTML et CSS</strong>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Amina Eddaoudi
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

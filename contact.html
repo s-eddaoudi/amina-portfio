@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Amina Eddaoudi</title>
+  <meta name="description" content="Contactez Amina Eddaoudi — Email, LinkedIn et CV" />
+  <style>
+    :root{--accent:#c4b5fd;--bg:#000000;--card:#0a0a0a;--muted:#b8b8d4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;color:#e5e7eb;background:linear-gradient(180deg,#020617,#020617)}
+    .wrap{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#22d3ee);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:28px}
+    .muted{color:var(--muted)}
+    nav ul{list-style:none;padding:0;display:flex;gap:12px;margin:0}
+    nav a{color:var(--accent);text-decoration:none;font-weight:500}
+    nav a.active{text-decoration:underline}
+    .card{background:rgba(255,255,255,.04);padding:18px;border-radius:14px;margin-top:24px}
+    a{color:var(--accent);text-decoration:none}
+    iframe{border-radius:12px;margin-top:12px}
+    footer{margin-top:32px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <!-- Header with avatar and name -->
+  <header>
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="avatar">AE</div>
+      <div>
+        <div class="muted" style="font-size:13px">Bonjour, je suis</div>
+        <h1>Amina Eddaoudi</h1>
+        <div class="muted">Étudiante en informatique • Programmation & cybersécurité</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav style="margin-top:24px">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="skills.html">Compétences</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <main>
+    <h2 style="margin-top:32px">Contact</h2>
+
+    <div class="card">
+      <h3>Email</h3>
+      <p class="muted">Vous pouvez me contacter par email :</p>
+      <p><a href="mailto:aminaeddaoudi08@gmail.com">aminaeddaoudi08@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h3>LinkedIn</h3>
+      <p class="muted">Retrouvez-moi sur LinkedIn :</p>
+      <p><a href="https://www.linkedin.com/in/amina-eddaoudi-858042339" target="_blank">linkedin.com/in/amina-eddaoudi-858042339</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Mon CV</h3>
+      <p class="muted">Téléchargez ou lisez mon CV au format PDF :</p>
+      <p><a href="CV-aeddaoudi.pdf" download>Télécharger le CV</a></p>
+      <iframe src="CV-aeddaoudi.pdf" width="100%" height="600px">
+        Votre navigateur ne supporte pas l’affichage des PDF. 
+        <a href="CV-aeddaoudi.pdf">Téléchargez le CV ici</a>.
+      </iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> Amina Eddaoudi — Portfolio personnel
+  </footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
